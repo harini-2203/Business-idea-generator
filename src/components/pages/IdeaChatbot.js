@@ -7,7 +7,7 @@ const IdeaChatbot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [ideas, setIdeas] = useState([]);
   const messagesEndRef = useRef(null);
-  let API_BASE_URL = "http://localhost:5000/api";
+  let API_BASE_URL = "https://l3q3ldjs-5000.inc1.devtunnels.ms/api";
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });

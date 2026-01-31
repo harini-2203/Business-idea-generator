@@ -21,7 +21,7 @@ import {
 
 import axios from "axios";
 import IdeaDetailsDialog from "./IdeaDetailsDialog";
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://l3q3ldjs-5000.inc1.devtunnels.ms/api";
 
 const BusinessIdeaGenerator = () => {
   const [activeTab, setActiveTab] = useState("profile");

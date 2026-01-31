@@ -10,7 +10,7 @@ const StockCandlestickChart = () => {
   const fetchStockData = async () => {
     try {
       console.log("fetching")
-      const response = await axios.get(`http://localhost:5000/api/top-stocks?symbol=${symbol}&interval=${interval}`);
+      const response = await axios.get(`https://l3q3ldjs-5000.inc1.devtunnels.ms/api/top-stocks?symbol=${symbol}&interval=${interval}`);
       console.log("fetched",response.data)
       // Check if data exists and has the expected structure
       if (response.data && response.data.data) {

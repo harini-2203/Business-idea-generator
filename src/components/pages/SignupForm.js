@@ -32,7 +32,7 @@ const SignupForm = () => {
     setError('');
 
     try {
-      const response = await axios.post("http://localhost:5000/signup",formData);
+      const response = await axios.post("https://l3q3ldjs-5000.inc1.devtunnels.ms/signup",formData);
       localStorage.setItem('token', response.data.token);
       navigate('/bus');
     } catch (err) {
