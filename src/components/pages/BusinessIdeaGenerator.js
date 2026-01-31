@@ -248,6 +248,7 @@ let des=idea.short_description
     downloadAnchorNode.remove();
   };
 
+  // eslint-disable-next-line no-unused-vars
   const renderContent = (data) => {
     if (!data || typeof data !== "object") {
       return null;
@@ -268,7 +269,9 @@ let des=idea.short_description
                     {value.map((item, idx) => (
                       <div key={idx} className="ml-2">
                         {typeof item === "object" ? (
-                          renderContent(item)
+                          <div className="py-1 px-3 bg-gray-50 rounded-md text-gray-700">
+                            {JSON.stringify(item)}
+                          </div>
                         ) : (
                           <div className="py-1 px-3 bg-gray-50 rounded-md text-gray-700">
                             {item}
