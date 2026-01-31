@@ -15,8 +15,8 @@ const IdeaChatbot = () => {
 
   useEffect(() => {
     fetchIdeas();
-    console.log(ideas)
-  }, []); // Only fetch ideas on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     scrollToBottom();

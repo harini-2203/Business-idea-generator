@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import {
@@ -11,25 +11,14 @@ import {
 import { Textarea } from "../ui/textarea";
 import { Alert, AlertDescription } from "../ui/alert";
 import {
-  Brain,
-  Target,
   Star,
   AlertTriangle,
   DollarSign,
   Download,
   Plus,
   Trash2,
-  Save,
-  X,
 } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "../ui/dialog";
+
 import axios from "axios";
 import IdeaDetailsDialog from "./IdeaDetailsDialog";
 const API_BASE_URL = "http://localhost:5000/api";
@@ -744,4 +733,5 @@ let des=idea.short_description
     </div>
   );
 };
+  // eslint-disable-next-line no-unused-vars
 export default BusinessIdeaGenerator;
